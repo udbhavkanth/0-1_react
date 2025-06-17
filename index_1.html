@@ -1,0 +1,24 @@
+//this code is all about how to use source code of React which is coming from CDN links 
+//and using this to give browser {react power}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0-1_react</title>
+</head>
+<body>
+    <div id = "root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        const heading = React.createElement("h1" , {} , "Hello World from React");
+        const root =  ReactDOM.createRoot(document.getElementById("root"));
+
+        root.render(heading)
+    </script>
+</body>
+</html>
